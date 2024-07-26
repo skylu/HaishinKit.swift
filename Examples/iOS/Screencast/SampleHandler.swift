@@ -52,7 +52,7 @@ open class SampleHandler: RPBroadcastSampleHandler {
          logger.appender = socket
          logger.level = .debug
          */
-        LBLogger.with(HaishinKitIdentifier).level = .info
+        LBLogger.with(HaishinKitIdentifier).level = .trace
         // rtmpStream.audioMixerSettings = .init(sampleRate: 0, channels: 2)
         rtmpStream.audioMixerSettings.tracks[1] = .default
         rtmpStream.videoSettings.scalingMode = .letterbox
